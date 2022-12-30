@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Product+Sans&display=swap');
+/* Use the Google color palette */
+:root {
+--google-blue: #4285F4;
+--google-red: #EA4335;
+--google-yellow: #FBBC05;
+--google-green: #34A853;
+}
+
+/* Add some basic styles */
+body {
+font-family: 'Product Sans', Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+/* Style the textarea and button */
+textarea {
+width: 60%;
+height: 300px;
+font-size: 14px;
+padding: 10px;
+box-sizing: border-box;
+align-self: center;
+border-radius: 5px;
+background-color: #EDF4FF ;
+margin: 20px 40px;
+}
+
+button {
+font-size: 14px;
+padding: 10px 20px;
+border: none;
+background-color: var(--google-blue);
+color: white;
+cursor: pointer;
+border-radius: 5px;
+transition: transform 0.1s;  /* Add a transition for the transform property */
+opacity: 1;
+transform: scale(1);  /* Set the initial scale to 1 (normal size) */
+height: 36px;
+width: 90px;
+margin-left: 20px;
+}
+
+button:active {
+  transform: scale(1.15);  /* Set the scale to 1.2 on active (clicked) state */
+}
+
+button:hover {
+  opacity: 0.8;  /* Set the opacity to 0.8 on hover */
+}
+
+/* Style the beautified code */
+
+#beautified-code{
+  border: 1px solid black;
+
+  font-family: Consolas, monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow: auto;
+}
+* {
+  margin: 10px 0px;
+}
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: left;
+  margin-right: 20%;
+  margin-left: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: auto; /* horizontally center the element */
+  text-align: center; /* center the text inside the element */
+}
+/* Style the scrollbar on webkit-based browsers */
+/* Style the scrollbar on webkit-based browsers */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: white; /* red */
+}
+
+/* Style the thumb (the part of the scrollbar that can be dragged) */
+::-webkit-scrollbar-thumb {
+  background-color: var(--google-blue); /* yellow */
+  border-radius: 2px;
+}
+
+/* Change the thumb color when it is being dragged */
+
+/* Style the scrollbar on Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--google-blue); /* yellow */
+}
+
+h1{
+  color: var(--google-blue);
+  margin: 0px 40px;
+}
+footer {
+  text-align: center;
+  font-size: 12px;
+  background-color: var(--google-blue);
+  color: white;
+  width: 100%;
+  position: absolute;
+  margin-left: 0px;
+  box-sizing: border-box;
+  margin-bottom: 0px;
+
+}
+h2{
+  margin: 10px 30px;
+}
+p{
+  margin-top: 20px ;
+  margin-left: 40px;
+
+}

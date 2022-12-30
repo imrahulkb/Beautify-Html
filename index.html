@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Code Beautifier</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8440667357327597" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./prism.css">
+</style>
+  </head>
+  <body>
+    <script type="module" >
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDXkQa7lFjNh269NfoKLfYhxoZAr0UmcGk",
+      authDomain: "beautify-html.firebaseapp.com",
+      databaseURL: "https://beautify-html-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "beautify-html",
+      storageBucket: "beautify-html.appspot.com",
+      messagingSenderId: "1024653446022",
+      appId: "1:1024653446022:web:762a49711310dc19633a07",
+      measurementId: "G-1JMYDLKBQ0"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+  <h1>HTML Code Beautifier</h1>
+
+
+  <div class="container">
+    <p>Enter your HTML code:</p>
+    <textarea id="html-code" class="language-html"></textarea>
+    <div style="padding: 10px 0 0 0 ">
+      <button id="paste-button" onclick="pasteFromClipboard()">Paste</button>
+      <br>
+      <button onclick="clearInput()">Clear</button>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <p>Beautified HTML code:</p>
+    <textarea readonly id="beautified-code" class="language-html"></textarea>
+    <div style="padding: 10px 0 0 0 ">
+      <button id="beautify-button">Beautify</button>
+      <br>
+      <button id="copy-button">Copy</button>
+    </div>
+  </div>
+  <footer>
+    <div class="container1" >
+      <h2>Copyright &copy; 2022, Rahul Bhandari</h2>
+      <h2>Created by Rahul Bhandari</h2>
+      <h2>Email: <a href="mailto:rahulbhandari@ieee.org">rahulbhandari@ieee.org</a></h2>
+    </div>
+</footer>
+
+    <script type="module" src="./app.js"></script>
+    <script type="text/javascript" src="./prism.js"></script>
+
+    </script>
+  </body>
+</html>
