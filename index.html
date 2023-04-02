@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>HTML Code Beautifier</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8440667357327597" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./prism.css">
 </style>
@@ -28,9 +27,12 @@
     const analytics = getAnalytics(app);
   </script>
 
-  <h1>HTML Code Beautifier</h1>
+  
+  <div style="position: fixed; top: 0px;width: 100%; background-color: white;">
+      <h1>HTML Code Beautifier</h1>
+  </div>
 
-
+<div style="margin-top: 30px;">
   <div class="container">
     <p>Enter your HTML code:</p>
     <textarea id="html-code" class="language-html"></textarea>
@@ -38,6 +40,8 @@
       <button id="paste-button" onclick="pasteFromClipboard()">Paste</button>
       <br>
       <button onclick="clearInput()">Clear</button>
+      <br>
+      <button id="beautify-button">Beautify</button>
     </div>
   </div>
 
@@ -47,11 +51,11 @@
     <p>Beautified HTML code:</p>
     <textarea readonly id="beautified-code" class="language-html"></textarea>
     <div style="padding: 10px 0 0 0 ">
-      <button id="beautify-button">Beautify</button>
-      <br>
       <button id="copy-button">Copy</button>
     </div>
   </div>
+</div>
+  
   <footer>
     <div class="container1" >
       <h2>Copyright &copy; 2022, Rahul Bhandari</h2>
